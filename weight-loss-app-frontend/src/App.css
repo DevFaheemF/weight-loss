@@ -1,0 +1,50 @@
+body { font-family: Arial, sans-serif; background-color: #d8e9e7 !important; }
+.form-control { padding: 8px; height: 45px; width: 100%; font-size: 16px; border-radius: 5px; border: 1px solid #ccc; }
+.form-control:focus { box-shadow: none; }
+.custom-heading { font-size: 1.7rem; display: grid; grid-template-columns: 1fr max-content 1fr; grid-column-gap: 1.2rem; align-items: center; }
+.custom-heading::before,
+.custom-heading::after { content: ""; display: block; height: 1px; background-color: currentColor; }
+.progress-table th { white-space: nowrap; }
+.progress-table td,.progress-table th { text-align: center; }
+.summary-section { border-radius: 10px; padding: 20px; }
+#weekly-summary { padding: 20px; }
+.summary-overview { margin-bottom: 50px; }
+#weekly-summary .card-title { font-weight: bold; font-size: 1.4rem; color: #ffffff; text-align: center; padding: 5px 0px; }
+#weekly-summary  .card-text { font-size: 1rem; color: #407192; }
+#weekly-summary  .card-body { padding: 15px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border-radius: 10px; }
+#weekly-summary  .card { border: none; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+#weekly-summary  .card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+#weekly-summary  .card-body { background: linear-gradient(145deg, #ecf0f1, #bdc3c7); }
+#weekly-summary  .card-body h5 { font-size: 35px; }
+#weekly-summary  .card-body p { font-size: 1.1rem; color: #34495e; margin-bottom: 5px; }
+#weekly-summary  .card-body .highlight { color: #e74c3c; font-weight: bold; }
+#weekly-summary  .card-body p strong { color: #407192; }
+#weekly-summary  .summary-overview .card { background: linear-gradient(145deg, #f39c12, #f1c40f); color: white; }
+#weekly-summary  .summary-overview .card .card-body { background: transparent; }
+.chart-area { position: relative; width: 100%; height: 600px; margin-bottom: 80px; }
+.loader { height: 80vh; display: flex; align-items: center; justify-content: center; column-gap: 20px; }
+.loader .dot { width: 20px; height: 20px; background-color: black; border-radius: 50%; animation: loading 1s infinite alternate; }
+.loader .dot:nth-child(1) { background-color: #4285f4; animation-delay: -0.25s; }
+.loader .dot:nth-child(2) { background-color: #ea4335; animation-delay: -0.5s; }
+.loader .dot:nth-child(3) { background-color: #fbbc05; animation-delay: -0.75s; }
+.loader .dot:nth-child(4) { background-color: #34a853; animation-delay: -1s; }
+@keyframes loading {
+ 0% { transform: translateY(-15px); }
+100% { transform: translateY(5px); }
+ }
+.progress-table  .table-row { transition: all 0.3s ease-in-out; }
+.progress-table  .table-row:hover { background-color: #ffeb3b; color: #000; transform: scale(1.02); }
+.disabled { opacity: 0.3; cursor: not-allowed; }
+@media (max-width: 767px) {
+ .navbar-toggler:focus { box-shadow: none; }
+.navbar { position: absolute; width: 100%; top: 0%; }
+.navbar .navbar-collapse { height: 60px; text-align: center; padding-top: 18px; }
+#weekly-summary  .card-title { font-size: 1rem; }
+#weekly-summary  .card-body { padding: 12px; }
+#weekly-summary .card-body h5 { font-size: 26px; }
+#weekly-summary .card-body p strong { font-size: 14px; }
+#weekly-summary .card-body p { line-height: 20px; font-size: 14px; }
+.summary-section { padding: unset; }
+#weekly-summary { padding: 20px 14px; }
+ }
+
